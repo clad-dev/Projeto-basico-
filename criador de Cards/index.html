@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css">
+<title>Cards Dinâmicos de Personagem</title>
+
+</head>
+<body>
+
+<h1>Adicionar Personagem</h1>
+
+<form id="add-card-form">
+  <label>Imagem:</label>
+
+<label>
+  <input type="radio" name="image-type" value="link" checked>
+  Link
+</label>
+
+<label>
+  <input type="radio" name="image-type" value="file">
+  Galeria
+</label>
+
+<input type="text" id="image-link" placeholder="Link da imagem">
+<input type="file" id="image-file" accept="image/*" style="display: none;">
+  <input type="text" id="name" placeholder="Nome do personagem" required>
+  <input type="text" id="class" placeholder="Classe" required>
+  <input type="text" id="power" placeholder="Poder" required>
+  <button type="submit">Adicionar Card</button>
+</form>
+
+<div id="cards-container">
+  <!-- Os cards serão adicionados aqui dinamicamente -->
+</div>
+
+
+
+</body>
+<script src="js/index.js"></script>
+</html>
